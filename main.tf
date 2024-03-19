@@ -5,4 +5,8 @@ resource "aws_instance" "public_instance" {
  tags = {
    Name = var.name_tag,
  }
+ #userdata scriopt
+ user_data = file("script.sh")
 }
+
+
